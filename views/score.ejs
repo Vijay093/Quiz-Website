@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Quiz Score</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Your Quiz Score</h1>
+    <p class="quiz-score">You scored <%= score %> out of 10 questions.</p>
+    <!-- <p><a href="/">Try Again</a></p> -->
+    <form action="/quiz" method="get">
+        <button type="submit" class="try-again-button">Try Again</button>   
+    </form>
+    <form action="/" method="get">
+        <button type="submit" class="try-again-button">Home Page</button>   
+    </form>
+    </div>
+</body>
+</html>
+

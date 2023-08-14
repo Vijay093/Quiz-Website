@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+  <h1>Quiz</h1>
+  <hr>
+  <form action="/submit" method="post">
+    <% for (let i = 0; i < questions.length; i++) { %>
+        <div class="quiz-question-container" id="question<%= i + 1 %>">
+      <p class="quiz-question"><%= i+1 %>. <%- questions[i].question %></p>
+      <div class="quiz-options">
+      <input class="quiz-option-label" type="radio" name="answers[<%= i %>]" value="true"> 
+      <span class="radio-text">True</span>
+      <input class="quiz-option-label" type="radio" name="answers[<%= i %>]" value="false">
+      <span class="radio-text">False</span>
+      </div>
+      <br>
+        </div>
+    <% } %>
+    <button class="quiz-submit" type="submit">Submit</button>
+  </form>
+
+  <form action="/" method="get">
+    <button type="submit" class="try-again-button">Go Back</button>   
+  </form>
+    </div>
+
+</body>
+</html>
+
+

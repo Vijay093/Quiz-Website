@@ -1,0 +1,94 @@
+/* Reset some default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Basic styling */
+body {
+  background-size: cover;
+  background-image: url('/images/quiz.jpg');
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Quiz specific styling */
+.quiz-question {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.quiz-question-container {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.quiz-options {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+  /* text-align: center; */
+}
+
+.quiz-option-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radio-text {
+  margin: 0;
+}
+
+.quiz-submit {
+  text-align: center;
+}
+
+.quiz-score {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
