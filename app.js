@@ -6,7 +6,7 @@ const port = 3000;
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-const API_URL = 'https://opentdb.com/api.php?amount=10&category=9&type=boolean';
+const API_URL = 'https://opentdb.com/api.php?amount=10&type=boolean';
 let correctAnswers = [];
 
 
